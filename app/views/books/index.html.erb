@@ -1,6 +1,61 @@
-<h1>BOOK INDEX</h1>
+<%= render 'shared/header' %>
 
-<ul>
-  <li><%= link_to '新規登録', new_user_registration_path %></li>
-  <li><%= link_to 'ログイン', new_user_session_path %></li>
-</ul>
+
+  <div class="firstpage_main">
+    <div class="firstpage_main_left">
+    <%= image_tag "book_firstpage.jpeg", class:"book_firstpage_main_image"%>
+    </div>
+
+    <div class="firstpage_main_right">
+    <h1 class="firstpage_main_title">"あの人"の本棚<br>覗いてみませんか？</h1>
+    <p class="firstpage_main_text">
+    Forest Libraryは読書好きのあなたにおすすめのサービスです。<br>
+    あなたの本を登録できる管理ツールでありながら<br>
+    本棚をシェアできる”本のSNS”です。<br>
+    憧れの"あの人"や尊敬している"あの人"の<br>
+    本棚を覗いてみませんか？</p>
+    <p class="firstpage_main_invite">さあ、あなたも始めよう！</p>
+      <ul class="firstpage_main_btns">
+        <li><%= button_to '新規登録', new_user_registration_path, method: :get, class:"firstpage_btn" %></li>
+        <li><%= button_to 'ログイン', new_user_session_path, class:"firstpage_btn" %></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="content">
+  <div class="firstpage_about">
+    <h1 class="firstpage_about_title">ABOUT</h1>
+    <div class="first_about_cards">
+
+      <div class="firstpage_about_card">
+        <%=image_tag "book_app_icon.png", class:"firstpage_about_img" %>
+        <h2 class="firstpage_about_semititle">本の管理</h2>
+        <p class="firstpage_about_text">
+        読んだ本を管理できる、そんなツールがあればなぁ、、、<br>
+        読書好きなあなたのその悩み解決します！<br>
+        紙の本も電子書籍もオーディオブックも<br>
+        一つにまとめてスッキリ管理！</p>
+      </div>
+
+      <div class="firstpage_about_card">
+        <%=image_tag "book_icon.jpeg", class:"firstpage_about_img" %>
+        <h2 class="firstpage_about_semititle">シンプルなデザイン</h2>
+        <p class="firstpage_about_text">
+        見た目はスッキリとしていますが機能は充実！<br>
+        圧倒的な使いやすさを実現しました。</p>
+      </div>
+
+      <div class="firstpage_about_card">
+        <%=image_tag "book_user_icon3.jpeg", class:"firstpage_about_img" %>
+        <h2 class="firstpage_about_semititle">本棚のシェア</h2>
+        <p class="firstpage_about_text">
+        森の図書館では、”本”を探すことはできません。<br>
+        あくまでも、”人”が主体のサービスです。<br>
+        気になるあの人の本棚を覗いてみましょう。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= render 'shared/footer' %>

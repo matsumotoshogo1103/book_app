@@ -1,0 +1,102 @@
+
+/* firstpage_main */
+
+.firstpage_main {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(27, 25, 25);
+}
+
+/* firstpage_main_left */
+
+.book_firstpage_main_image {
+  height: 900px;
+  width: 100%;
+}
+
+/* firstpage_right */
+
+.firstpage_main_right {
+  margin: 60px 80px 0 0;
+  color: rgb(230, 230, 220);
+}
+
+.firstpage_main_title {
+  font-size: 60px;
+  margin-bottom: 90px;
+}
+
+.firstpage_main_text {
+  font-size: 20px;
+  margin-bottom: 70px;
+}
+
+.firstpage_main_invite {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.firstpage_main_btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstpage_btn {
+  color: rgb(230, 230, 220);
+  background-color: rgb(1, 130, 1);
+  font-size: 30px;
+  width: 200px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* firstpage_about */
+
+.firstpage_about {
+  margin: 80px 0;
+}
+
+.firstpage_about_title {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(11, 65, 11);
+  border-bottom: solid 2px rgb(1, 130, 1);
+  margin-bottom: 40px;
+}
+
+.first_about_cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.firstpage_about_card {
+  padding: 15px;
+  width: 25%;
+  height: 550px;
+  border: solid 2px rgb(1, 130, 1);
+}
+
+
+.firstpage_about_img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+
+}
+
+.firstpage_about_semititle {
+  color: rgb(11, 65, 11);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid 2px rgb(1, 130, 1);
+}
+
+.firstpage_about_text {
+  padding: 0 20px;
+  font-size: 20px;
+}
