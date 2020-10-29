@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -68,6 +69,19 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
 }
 
 /* Blur images when they have no alt attribute */
