@@ -64,12 +64,12 @@ article > * + * {
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
+/* input,
 button,
 textarea,
 select {
   font: inherit;
-}
+} */
 
 a {
   text-decoration: none;
