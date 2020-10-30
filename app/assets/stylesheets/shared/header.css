@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* header_left */
+
+.header_left {
+  display: flex;
+}
+
+.header_title {
+  line-height: 70px;
+  color: rgb(11, 65, 11);
+}
+
+.book_header_icon {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+/* header_right */
+
+.header_right_lists {
+  display: flex;
+}
+
+.header_right_list {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+
+/* second */
+
+.second_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
