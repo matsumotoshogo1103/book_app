@@ -40,7 +40,8 @@
 
 .top_user_right {
   padding: 10px;
-  color: black;
+  color: #333333;
   font-size: 20px;
+  font-weight: bold;
 }
 

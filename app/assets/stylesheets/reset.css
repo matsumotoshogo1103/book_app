@@ -38,6 +38,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -82,6 +83,11 @@ li {
 .content {
   width: 90%;
   margin: 0 auto;
+}
+
+a:-webkit-any-link {
+  color: rgb(15, 65, 15);
+
 }
 
 /* Blur images when they have no alt attribute */

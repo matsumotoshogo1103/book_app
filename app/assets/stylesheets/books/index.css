@@ -45,7 +45,8 @@
 .firstpage_btn {
   color: rgb(230, 230, 220);
   background-color: rgb(1, 130, 1);
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
   width: 200px;
   height: 70px;
   border: none;
