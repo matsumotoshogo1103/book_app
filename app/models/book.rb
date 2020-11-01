@@ -1,5 +1,4 @@
 class Book < ApplicationRecord
-
   belongs_to :user
 
   with_options presence: true do
@@ -10,5 +9,4 @@ class Book < ApplicationRecord
     validates :text
     validates :user_id
   end
-
 end

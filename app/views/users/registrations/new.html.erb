@@ -8,6 +8,11 @@
         <%= render "users/shared/error_messages", resource: resource %>
 
         <div class="text_field">
+          <div class="field_title">プロフィール画像</div>
+          <%= f.file_field :image, id:"item-image" %>
+        </div>
+
+        <div class="text_field">
           <div class="field_title">ニックネーム</div>
           <%= f.text_field :nickname, placeholder: "例) book太郎", class:"form_field" %>
         </div>
@@ -53,4 +58,6 @@
       <% end %>
   </div>
 </div>
+
+<%= render 'shared/footer' %>
 

@@ -1,7 +1,40 @@
 <%= render 'shared/header' %>
 
-  <div class="top_main">
+  <div class="top_first">
     <div class="content">
-      <h1 class="top_title">ようこそ<br>Forest Libraryへ<br>どなたの本棚を覗いてみますか？</h1>
+      <h1 class="top_first_title">ようこそ<br>Forest Libraryへ<br>どなたの本棚を覗いてみますか？</h1>
     </div>
   </div>
+
+  <div class="content">
+    <div class="top_main">
+      <h1 class="top_main_title">~ユーザー 一覧~</h1>
+      <div class="top_users">
+        <% @user.each do |user| %>
+        <%= link_to '#', class:"top_user_link" do %>
+        <div class="top_user">
+          <div class="top_user_left">
+            <%= image_tag user.image.variant(resize: '180x180') %>
+          </div>
+          <div class="top_user_right">
+            <div class="top_user_name">
+            ユーザー名：<%= user.nickname %>
+            </div>
+            <div class="top_user_age">
+            年齢：<%= user.age %>
+            </div>
+            <div class="top_user_gender">
+            性別：<%= user.gender.name %>
+            </div>
+            <div class="top_user_job">
+            職種：<%= user.job.name %>
+            </div>
+          </div>
+        </div>
+        <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <%= render 'shared/footer' %>
