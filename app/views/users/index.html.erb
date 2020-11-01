@@ -11,7 +11,7 @@
       <h1 class="top_main_title">~ユーザー 一覧~</h1>
       <div class="top_users">
         <% @user.each do |user| %>
-        <%= link_to '#', class:"top_user_link" do %>
+        <%= link_to user_path(user.id), class:"top_user_link" do %>
         <div class="top_user">
           <div class="top_user_left">
             <%= image_tag user.image.variant(resize: '180x180') %>
