@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @books = @user.books.order('id DESC')
   end
 
   def edit

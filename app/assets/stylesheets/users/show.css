@@ -57,3 +57,23 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.show_books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.show_book {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  width: 30%;
+  border: solid 2px rgb(1, 130, 1);
+  margin: 30px 0;
+}
+
+.book_image {
+  margin: 10px auto 20px;
+  height: 150px;
+}

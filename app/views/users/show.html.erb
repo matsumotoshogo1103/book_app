@@ -50,12 +50,23 @@
         <% end %>
       </div>
       <div class="show_books">
+        <% if @books.present?%>
+        <% @books.each do |book|%>
         <div class="show_book">
-        <%# <% if @user.books.present?%>
-        <%# <% each do |book|%>
-        <%# <% end %> 
-        <%# <% end %>  
+        <div class="show_book_image">
+        <%= image_tag "book_icon2.jpeg", class:"book_image"%>
         </div>
+        <div class="show_book_title">
+        タイトル：<%= book.title%>
+        </div>
+        <div class="show_book_autor">
+        著者：<%= book.autor%>
+        </div>
+        </div>
+        <% end %> 
+        <% else %>
+        <p>まだ投稿された本はありません。</p>
+        <% end %>  
       </div>
     </div>
   </div>
