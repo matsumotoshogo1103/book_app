@@ -1,1 +1,52 @@
-<%= @user.nickname %>
+<%= render "shared/header" %>
+
+  <div class="show_first">
+    <div class="content">
+    <% if current_user.id == @user.id %>
+      <h1 class="show_first_title"><%= @user.nickname %>のマイページ</h1>
+    <% else %>
+      <h1 class="show_first_title"><%= @user.nickname %>さんの本棚</h1>
+    <% end %>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="show_main">
+      <h1 class="show_main_title">プロフィール</h1>
+      <div class="show_user">
+        <div class="show_user_left">
+          <%= image_tag @user.image.variant(resize: '180x180') %>
+        </div>
+
+        <div class="show_user_right">
+          <div class="show_user_name">
+            ユーザー名：<%= @user.nickname %>
+          </div>
+          <div class="show_user_age">
+            年齢：<%= @user.age %>
+          </div>
+          <div class="show_user_gender">
+            性別：<%= @user.gender.name %>
+          </div>
+          <div class="show_user_job">
+            職種：<%= @user.job.name %>
+          </div>
+          <div class="show_user_introduce">
+            自己紹介：<%= @user.introduce %>
+          </div>
+        </div>
+      </div>
+      <h1 class="show_main_title">本棚</h1>
+      <div class="show_books">
+        <div class="show_book">
+        <% if @user.books.present?%>
+        <% each do |book|%>
+        <% end %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%= render "shared/footer" %>
+
