@@ -2,8 +2,8 @@
 
 <div class="login_page">
   <div class="login_form">
-    <h2 class="login_title">Sign up</h2>
-      <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true  do |f| %>
+    <h2 class="login_title">Edit</h2>
+      <%= form_with model: @user, url: user_path, id: 'new_user', class: 'new_user', local: true  do |f| %>
 
         <%= render "users/shared/error_messages" %>
 
@@ -15,21 +15,6 @@
         <div class="text_field">
           <div class="field_title">ニックネーム</div>
           <%= f.text_field :nickname, placeholder: "例) book太郎", class:"form_field" %>
-        </div>
-
-        <div class="text_field">
-          <div class="field_title">メールアドレス</div>
-          <%= f.text_field :email, placeholder: "例) book@com", class:"form_field" %>
-        </div>
-
-        <div class="text_field">
-          <div class="field_title">パスワード</div>
-          <%= f.password_field :password, placeholder: "6文字以上の半角英数字", class:"form_field" %>
-        </div>
-
-        <div class= "text_field">
-          <div class="field_title">パスワード（確認）</div>
-          <%= f.password_field :password_confirmation, placeholder: "同じパスワードを入力してください", class:"form_field"  %>
         </div>
 
         <div class="text_field">
@@ -53,11 +38,10 @@
         </div>
 
         <div class="actions">
-          <%= f.submit "Sign up", class:"login_btn" %>
+          <%= f.submit "Edit", class:"login_btn" %>
         </div>
       <% end %>
   </div>
 </div>
 
 <%= render 'shared/footer' %>
-
