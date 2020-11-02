@@ -8,11 +8,6 @@
         <%= render "books/shared/error_messages" %> 
 
         <div class="text_field">
-          <div class="field_title">本の画像</div>
-          <%= f.file_field :image, id:"item-image" %>
-        </div>
-
-        <div class="text_field">
           <div class="field_title">タイトル</div>
           <%= f.text_field :title, placeholder: "例) book太郎の冒険", class:"form_field" %>
         </div>
