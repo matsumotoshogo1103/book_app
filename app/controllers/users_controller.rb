@@ -17,8 +17,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.valid? && current_user.id == @user.id
-      @user.update(user_params)
+    if current_user.id == @user.id && @user.update(user_params)
       redirect_to user_path(@user.id)
     else
       render :edit
