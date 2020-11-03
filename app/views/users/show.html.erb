@@ -46,16 +46,27 @@
       <div class="show_main_title_content">
         <h1 class="show_main_title">本棚</h1>
         <% if current_user.id == @user.id %>
-        <%= button_to "編集する", "#", class:"user_edit_btn" %>
+        <%= button_to "投稿する", new_book_path, method: :get, class:"user_edit_btn" %>
         <% end %>
       </div>
       <div class="show_books">
+        <% if @books.present?%>
+        <% @books.each do |book|%>
         <div class="show_book">
-        <% if @user.books.present?%>
-        <% each do |book|%>
-        <% end %>
-        <% end %>
+        <div class="show_book_image">
+        <%= image_tag "book_icon2.jpeg", class:"book_image"%>
         </div>
+        <div class="show_book_title">
+        タイトル：<%= book.title%>
+        </div>
+        <div class="show_book_autor">
+        著者：<%= book.autor%>
+        </div>
+        </div>
+        <% end %> 
+        <% else %>
+        <p>まだ投稿された本はありません。</p>
+        <% end %>  
       </div>
     </div>
   </div>

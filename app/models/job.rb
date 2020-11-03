@@ -1,4 +1,5 @@
 class Job < ActiveHash::Base
+  # リクナビNEXTを参考
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: '営業' },
