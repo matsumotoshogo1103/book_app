@@ -2,9 +2,7 @@ class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
   def index
-    if current_user
-      redirect_to users_path
-    end
+    redirect_to users_path if current_user
   end
 
   def new
@@ -25,5 +23,4 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:title, :price, :autor, :text, :genre_id).merge(user_id: current_user.id)
   end
-
 end

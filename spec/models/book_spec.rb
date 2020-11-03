@@ -20,7 +20,7 @@ describe Book do
     it 'ジャンルの情報が必須であること' do
       @book.genre_id = 1
       @book.valid?
-      expect(@book.errors.full_messages).to include "Genre must be other than 1"
+      expect(@book.errors.full_messages).to include 'Genre must be other than 1'
     end
 
     it '著者の情報が必須であること' do
@@ -36,9 +36,9 @@ describe Book do
     end
 
     it '値段は半角数字のみ保存可能であること' do
-      @book.price = "１２３０"
+      @book.price = '１２３０'
       @book.valid?
-      expect(@book.errors.full_messages).to include "Price is not a number"
+      expect(@book.errors.full_messages).to include 'Price is not a number'
     end
 
     it '本の感想の情報が必須であること' do
@@ -48,10 +48,3 @@ describe Book do
     end
   end
 end
-
-
-
-
-
-
-
