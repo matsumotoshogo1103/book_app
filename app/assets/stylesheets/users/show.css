@@ -58,13 +58,13 @@
   font-weight: bold;
 }
 
-.show_books {
+.show_user_books {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.show_book {
+.show_user_book {
   padding: 20px;
   text-align: center;
   font-weight: bold;
@@ -73,7 +73,7 @@
   margin: 30px 0;
 }
 
-.book_image {
+.show_user_book_image {
   margin: 10px auto 20px;
   height: 150px;
 }
