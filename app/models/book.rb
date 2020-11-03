@@ -7,6 +7,6 @@ class Book < ApplicationRecord
     validates :autor
     validates :price, format: { with: /\A[0-9]+\z/ }, numericality: { only_integer: true }
     validates :text
-    validates :user_id
+    validates :user
   end
 end
