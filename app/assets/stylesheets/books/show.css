@@ -50,8 +50,8 @@ th {
 
 td {
   width: 600px;
-  text-align: center;
   font-weight: bold;
+  padding: 20px 40px;
 }
 
 table,th,td {
