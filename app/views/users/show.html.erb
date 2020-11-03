@@ -49,21 +49,21 @@
         <%= button_to "投稿する", new_book_path, method: :get, class:"user_edit_btn" %>
         <% end %>
       </div>
-      <div class="show_books">
-        <% if @books.present?%>
-        <% @books.each do |book|%>
-        <div class="show_book">
-        <div class="show_book_image">
-        <%= image_tag "book_icon2.jpeg", class:"book_image"%>
-        </div>
-        <div class="show_book_title">
-        タイトル：<%= book.title%>
-        </div>
-        <div class="show_book_autor">
-        著者：<%= book.autor%>
-        </div>
-        </div>
-        <% end %> 
+      <div class="show_user_books">
+        <% if @books.present? %>
+          <% @books.each do |book|%>
+            <div class="show_user_book">
+            <%= link_to book_path(book.id) do %>
+            <%= image_tag "book_icon2.jpeg", class:"show_user_book_image"%>
+            <% end %>
+            <div class="show_book_title">
+            タイトル：<%= book.title%>
+            </div>
+            <div class="show_book_autor">
+            著者：<%= book.autor%>
+            </div>
+            </div>
+          <% end %> 
         <% else %>
         <p>まだ投稿された本はありません。</p>
         <% end %>  
