@@ -1,22 +1,22 @@
-.login_page {
+.form_page {
   padding: 50px 0;
   background-color: #f5f5f5;
   text-align: center;
 }
 
-.login_form {
+.forms {
   width: 30%;
   margin: 0 auto;
 }
 
-.login_title {
+.form_title {
   margin-bottom: 30px;
   font-size: 30px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid red;
   padding-bottom: 10px;
 }
 
-.text_field {
+.form_field {
   margin-bottom: 20px;
 }
 
@@ -26,7 +26,7 @@
   font-size: 20px;
 }
 
-.form_field {
+.form {
   font-size: 16px;
   width: 300px;
   line-height: 40px;
@@ -41,7 +41,7 @@
   padding: 0 20px;
 }
 
-.login_btn {
+.form_btn {
   width: 300px;
   height: 40px;
   background-color: #ea352d;
@@ -51,6 +51,8 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* session */
 
 .session_page {
   height: 100vh;

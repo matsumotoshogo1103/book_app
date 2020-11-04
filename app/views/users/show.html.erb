@@ -2,11 +2,11 @@
 
   <div class="show_first">
     <div class="content">
-    <% if current_user.id == @user.id %>
-      <h1 class="show_first_title"><%= @user.nickname %>のマイページ</h1>
-    <% else %>
-      <h1 class="show_first_title"><%= @user.nickname %>さんの本棚</h1>
-    <% end %>
+      <% if current_user.id == @user.id %>
+        <h1 class="show_first_title"><%= @user.nickname %>のマイページ</h1>
+      <% else %>
+        <h1 class="show_first_title"><%= @user.nickname %>さんの本棚</h1>
+      <% end %>
     </div>
   </div>
 
@@ -15,7 +15,7 @@
       <div class="show_main_title_content">
         <h1 class="show_main_title">プロフィール</h1>
         <% if current_user.id == @user.id %>
-        <%= button_to "編集する", edit_user_path, method: :get, class:"user_edit_btn" %>
+          <%= button_to "編集する", edit_user_path, method: :get, class:"user_edit_btn" %>
         <% end %>
       </div>
 
@@ -25,47 +25,34 @@
         </div>
 
         <div class="show_user_right">
-          <div class="show_user_name">
-            ユーザー名：<%= @user.nickname %>
-          </div>
-          <div class="show_user_age">
-            年齢：<%= @user.age %>
-          </div>
-          <div class="show_user_gender">
-            性別：<%= @user.gender.name %>
-          </div>
-          <div class="show_user_job">
-            職種：<%= @user.job.name %>
-          </div>
-          <div class="show_user_introduce">
-            自己紹介：<%= @user.introduce %>
-          </div>
+          <div>ユーザー名：<%= @user.nickname %></div>
+          <div>年齢：<%= @user.age %></div>
+          <div>性別：<%= @user.gender.name %></div>
+          <div>職種：<%= @user.job.name %></div>
+          <div>自己紹介：<%= @user.introduce %></div>
         </div>
       </div>
       
       <div class="show_main_title_content">
         <h1 class="show_main_title">本棚</h1>
         <% if current_user.id == @user.id %>
-        <%= button_to "投稿する", new_book_path, method: :get, class:"user_edit_btn" %>
+          <%= button_to "投稿する", new_book_path, method: :get, class:"user_edit_btn" %>
         <% end %>
       </div>
+
       <div class="show_user_books">
         <% if @books.present? %>
           <% @books.each do |book|%>
             <div class="show_user_book">
-            <%= link_to book_path(book.id) do %>
-            <%= image_tag "book_icon2.jpeg", class:"show_user_book_image"%>
-            <% end %>
-            <div class="show_book_title">
-            タイトル：<%= book.title%>
-            </div>
-            <div class="show_book_autor">
-            著者：<%= book.autor%>
-            </div>
+              <%= link_to book_path(book.id) do %>
+                <%= image_tag "book_icon2.jpeg", class:"show_user_book_image"%>
+              <% end %>
+              <div>タイトル：<%= book.title%></div>
+              <div>著者：<%= book.autor%></div>
             </div>
           <% end %> 
         <% else %>
-        <p>まだ投稿された本はありません。</p>
+          <p>まだ投稿された本はありません。</p>
         <% end %>  
       </div>
     </div>

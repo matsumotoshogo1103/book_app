@@ -1,44 +1,41 @@
 <%= render "shared/header" %>
 
-<div class="show_book_image">
+<div class="show_book_top">
   <%= image_tag "book_icon2.jpeg", class:"show_book_img"%>
 </div>
 
-
-
 <div class="content">
-  <div class="show_book_info">
-    <h1 class="show_book_info_title">詳細</h1>
+  <div class="show_book_main">
+    <h1 class="show_book_main_title">詳細</h1>
     <table>
-    <tr>
-      <th>タイトル</th><td><%= @book.title%></td>
-    </tr>
-    <tr>
-      <th>著者</th><td><%= @book.autor%></td>
-    </tr>
-    <tr>
-      <th>ジャンル</th><td><%= @book.genre.name %></td>
-    </tr>
-    <tr>
-      <th>値段</th><td><%= @book.price %>円</td>
-    </tr>
-    <tr>
-      <th>感想</th><td><%= @book.text %></td>
-    </tr>
+      <tr>
+        <th>タイトル</th><td><%= @book.title%></td>
+      </tr>
+      <tr>
+        <th>著者</th><td><%= @book.autor%></td>
+      </tr>
+      <tr>
+        <th>ジャンル</th><td><%= @book.genre.name %></td>
+      </tr>
+      <tr>
+        <th>値段</th><td><%= @book.price %>円</td>
+      </tr>
+      <tr>
+        <th>感想</th><td><%= @book.text %></td>
+      </tr>
     </table>
   </div>
 
   <% if current_user.id == @book.user.id %>
-  <div class="show_book_user">
-    <div class="show_book_edit">
-    <%= button_to '編集', edit_book_path(@book.id), method: :get, class:"show_book_btn"%>
+    <div class="show_book_btns">
+      <div class="show_book_edit">
+        <%= button_to '編集', edit_book_path(@book.id), method: :get, class:"show_book_btn"%>
+      </div>
+      <div class="show_user_delete">
+        <%= button_to "削除", book_path(@book.id), method: :delete, class:"show_book_btn"%>
+      </div>
     </div>
-
-    <div class="show_user_delete">
-    <%= button_to "削除", book_path(@book.id), method: :delete, class:"show_book_btn"%>
-    </div>
-  </div>
-<% end %>
+  <% end %>
 </div>
 
 
