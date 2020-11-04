@@ -30,12 +30,14 @@
 }
 
 .top_user {
+  align-items: center;
   display: flex;
   border: solid 2px rgb(1, 130, 1);
   margin-bottom: 30px;
   height: 200px;
   width: 40vw;
   padding: 10px
+  
 }
 
 .top_user_right {
