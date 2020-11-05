@@ -3,7 +3,7 @@
 
 .firstpage_main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgb(27, 25, 25);
 }
 
@@ -17,8 +17,9 @@
 /* firstpage_main_right */
 
 .firstpage_main_right {
-  margin: 60px 80px 0 0;
+  text-align: center;
   color: rgb(230, 230, 220);
+  margin-top: 70px;
 }
 
 .firstpage_main_title {
@@ -47,7 +48,7 @@
   background-color: rgb(1, 130, 1);
   font-size: 25px;
   font-weight: bold;
-  width: 200px;
+  width: 18vw;
   height: 70px;
   border: none;
   cursor: pointer;
@@ -68,7 +69,7 @@
   margin-bottom: 40px;
 }
 
-.first_about_cards {
+.firstpage_about_cards {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -77,7 +78,6 @@
 .firstpage_about_card {
   padding: 15px;
   width: 25%;
-  height: 550px;
   border: solid 2px rgb(1, 130, 1);
 }
 
@@ -86,7 +86,6 @@
   width: 200px;
   height: 200px;
   margin: 0 auto 10px;
-
 }
 
 .firstpage_about_semititle {
@@ -101,4 +100,73 @@
   padding: 0 20px;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+
+  .firstpage_main {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .firstpage_main_title {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  .firstpage_main_text {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .firstpage_about_cards {
+    display: block;
+  }
+  .firstpage_about_card {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .firstpage_main_invite {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .firstpage_main_btn {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 599px) {
+
+  .firstpage_main_image {
+    height: 500px;
+  }
+
+  .firstpage_main_right {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+
+  .firstpage_main_btn {
+    width: 25vw;
+  }
+
+  .firstpage_about_title {
+    font-size: 30px;
+  }
+
+  .firstpage_about_semititle {
+    font-size: 25px;
+  }
+  .firstpage_about_text {
+    font-size: 16px;
+  }
+
+  .firstpage_about_img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+  }
 }
