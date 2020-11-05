@@ -1,0 +1,17 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       introduce: 自己紹介
+       age: 年齢
+       image: プロフィール画像
+       job_id: 職種
+       gender_id: 性別
+     book: 
+       title: タイトル
+       genre_id: ジャンル
+       autor: 著者
+       price: 値段
+       text: 感想
+       book: 本
