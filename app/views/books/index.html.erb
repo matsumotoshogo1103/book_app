@@ -1,23 +1,22 @@
 <%= render 'shared/header' %>
 
-
   <div class="firstpage_main">
     <div class="firstpage_main_left">
-    <%= image_tag "book_firstpage.jpeg", class:"book_firstpage_main_image"%>
+      <%= image_tag "book_firstpage.jpeg", class:"firstpage_main_image"%>
     </div>
 
     <div class="firstpage_main_right">
-    <h1 class="firstpage_main_title">"あの人"の本棚<br>覗いてみませんか？</h1>
-    <p class="firstpage_main_text">
-    Book Forestは読書好きのあなたにおすすめのサービスです。<br>
-    あなたの本を登録できる管理ツールでありながら<br>
-    本棚をシェアできる”本のSNS”です。<br>
-    憧れの"あの人"や尊敬している"あの人"の<br>
-    本棚を覗いてみませんか？</p>
-    <p class="firstpage_main_invite">さあ、あなたも始めよう！</p>
+      <h1 class="firstpage_main_title">"あの人"の本棚<br>覗いてみませんか？</h1>
+      <p class="firstpage_main_text">
+      Book Forestは読書好きのあなたにおすすめのサービスです。<br>
+      あなたの本を登録できる管理ツールでありながら<br>
+      本棚をシェアできる”本のSNS”です。<br>
+      憧れの"あの人"や尊敬している"あの人"の<br>
+      本棚を覗いてみませんか？</p>
+      <p class="firstpage_main_invite">さあ、あなたも始めよう！</p>
       <ul class="firstpage_main_btns">
-        <li><%= button_to '新規登録', new_user_registration_path, method: :get, class:"firstpage_btn" %></li>
-        <li><%= button_to 'ログイン', new_user_session_path, class:"firstpage_btn" %></li>
+        <li><%= button_to '新規登録', new_user_registration_path, method: :get, class:"firstpage_main_btn" %></li>
+        <li><%= button_to 'ログイン', new_user_session_path, class:"firstpage_main_btn" %></li>
       </ul>
     </div>
   </div>
@@ -25,14 +24,13 @@
 <div class="content">
   <div class="firstpage_about">
     <h1 class="firstpage_about_title">ABOUT</h1>
-    <div class="first_about_cards">
-
+    <div class="firstpage_about_cards">
       <div class="firstpage_about_card">
         <%=image_tag "book_app_icon.png", class:"firstpage_about_img" %>
         <h2 class="firstpage_about_semititle">本の管理</h2>
         <p class="firstpage_about_text">
         紙の本も電子書籍もオーディオブックも一つにまとめてスッキリ管理！<br>
-        世界に一つだけのあなたの本棚です！</p>
+        世界に一つだけのあなたの本棚です。</p>
       </div>
 
       <div class="firstpage_about_card">

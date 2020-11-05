@@ -1,21 +1,28 @@
 <header>
-<div class="content">
-  <div class="header">
-    <%= link_to users_path, class:"header_left" do %>
-    <h1 class= "header_title">Book Forest</h1>
-    <%= image_tag "/assets/book_header_icon.jpeg", class:"book_header_icon"%>
-    <% end %>
+  <div class="content">
+    <div class="header">
+      <%= link_to users_path, class:"header_left" do %>
+      <h1 class= "header_title">Book Forest</h1>
+      <%= image_tag "/assets/book_header_icon.jpeg", class:"book_header_icon"%>
+      <% end %>
 
-    <% if user_signed_in? %>
-    <div class="header_right">
-      <ul class= "header_right_lists">
-        <li class="header_right_list"><%= link_to current_user.nickname, user_path(current_user.id) %></li>
-        <li class="header_right_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-      </ul>
+      <% if user_signed_in? %>
+      <div class="header_right">
+        <ul class= "header_right_lists", id= "header_lists">
+          <li class="header_right_list"><%= link_to current_user.nickname, user_path(current_user.id) %></li>
+          <li class="header_right_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+        </ul>
+      </div>
+        <div class="hunberger", id="hunberger">
+        <span></span>
+        </div>
+        <ul class="hunberger_lists", id="hunberger_lists">
+          <li class="hunberger_list"><%= link_to current_user.nickname, user_path(current_user.id) %></li>
+          <li class="hunberger_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+        </ul>
+      <% end %>
     </div>
-    <% end %>
   </div>
-</div>
 </header>
 
 

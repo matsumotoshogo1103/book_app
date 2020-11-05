@@ -4,3 +4,10 @@
   text-align: center;
   line-height: 70px;
 }
+
+@media (max-width: 599px) {
+  .footer {
+    line-height: 40px;
+    font-size: 10px;
+  }
+}

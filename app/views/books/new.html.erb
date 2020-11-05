@@ -1,39 +1,39 @@
 <%= render 'shared/second_header' %>
 
-<div class="login_page">
-  <div class="login_form">
-    <h2 class="login_title">投稿</h2>
+<div class="form_page">
+  <div class="forms">
+    <h2 class="form_title">投稿</h2>
       <%= form_with model: @book, url: books_path(current_user.id), id: 'new_user', class: 'new_user', local: true  do |f| %>
 
         <%= render "books/shared/error_messages" %> 
 
-        <div class="text_field">
+        <div class="form_field">
           <div class="field_title">タイトル</div>
-          <%= f.text_field :title, placeholder: "例) book太郎の冒険", class:"form_field" %>
+          <%= f.text_field :title, placeholder: "例) book太郎の冒険", class:"form" %>
         </div>
 
-        <div class="text_field">
+        <div class="form_field">
           <div class="field_title">著者</div>
-          <%= f.text_field :autor, placeholder: "例) 本棚  太郎", class:"form_field" %>
+          <%= f.text_field :autor, placeholder: "例) 本棚  太郎", class:"form" %>
         </div>
 
-        <div class="text_field">
+        <div class="form_field">
           <div class="field_title">値段</div>
-          <%= f.text_field :price, placeholder: "半角数字で入力", class:"form_field"  %>
+          <%= f.text_field :price, placeholder: "半角数字で入力", class:"form"  %>
         </div>
 
-        <div class="text_field">
+        <div class="form_field">
           <div class="field_title">ジャンル</div>
           <%= f.collection_select :genre_id, Genre.all, :id, :name, {}, {class:"select_box"} %>
         </div>
 
-        <div class="text_field">
+        <div class="form_field">
           <div class="field_title">感想</div>
-          <%= f.text_area :text, placeholder: "例) 物語に吸い込まれていくようで、あっという間に読み終わりました！", class:"form_field"  %>
+          <%= f.text_area :text, placeholder: "例) 物語に吸い込まれていくようで、あっという間に読み終わりました！", class:"form"  %>
         </div>
 
         <div class="actions">
-          <%= f.submit "投稿する", class:"login_btn" %>
+          <%= f.submit "投稿する", class:"form_btn" %>
         </div>
       <% end %>
   </div>

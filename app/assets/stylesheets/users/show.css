@@ -1,15 +1,23 @@
+/* show_first */
+
 .show_first {
   width: 100%;
   height: 650px;
   background-image: url("/images/book_show.jpeg");
+  background-size: cover;
+  position: relative;
 }
 
 .show_first_title {
-  padding-top: 300px;
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
   color: rgb(230, 230, 220);
   font-size: 50px;
   text-align: end;
 }
+
+/* show_main_user */
 
 .show_main {
   margin: 80px 0;
@@ -42,10 +50,9 @@
   border-radius: 5px;
 }
 
-
-
 .show_user {
   display: flex;
+  align-items: center;
   border: solid 2px rgb(1, 130, 1);
   margin-bottom: 80px;
   padding: 10px 50px;
@@ -57,6 +64,8 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+/* show_main_books */
 
 .show_user_books {
   display: flex;
@@ -76,4 +85,85 @@
 .show_user_book_image {
   margin: 10px auto 20px;
   height: 150px;
+}
+
+@media (max-width: 1024px) {
+
+  .show_first {
+    height: 400px;
+  }
+
+  .show_first_title {
+    font-size: 40px;
+    bottom: 50px;
+  }
+
+  .show_user {
+    padding: 10px 30px;
+  }
+
+  .show_user_img {
+    margin: 0 auto;
+    width: 230px;
+  }
+
+  .show_user_right {
+    font-size: 16px;
+  }
+
+  .user_edit_btn {
+    right: 50px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 599px) {
+  .show_first {
+    height: 300px;
+  }
+
+  .show_first_title {
+    font-size: 25px;
+    right: 30px;
+    bottom: 40px;
+  }
+
+  .show_main_title {
+    font-size: 30px;
+  }
+
+
+  .show_user {
+    display: block;
+    padding: 10px;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .show_user_left {
+    margin: 0 auto;
+  }
+
+
+  .show_user_books {
+    display: block;
+  }
+
+  .show_user_book {
+    padding: 10px;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .show_user_book_image {
+    margin: 5px auto 10px;
+    height: 100px;
+  }
+
+  .user_edit_btn {
+    right: 20px;
+    width: 60px;
+    height: 30px;
+    font-size: 10px;
+  }
 }
