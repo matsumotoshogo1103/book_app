@@ -48,6 +48,10 @@
   
 }
 
+.top_user:hover {
+  border: solid 3px rgb(1, 130, 1);
+}
+
 .top_user_right {
   padding: 10px;
   color: #333333;

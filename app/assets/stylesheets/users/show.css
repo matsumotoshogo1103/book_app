@@ -48,6 +48,18 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  border-bottom: 4px solid rgb(0, 80, 0);
+  outline: none;
+}
+
+.user_edit_btn:hover {
+  background-color: rgb(1, 160, 1);
+}
+
+.user_edit_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 .show_user {
@@ -77,9 +89,13 @@
   padding: 20px;
   text-align: center;
   font-weight: bold;
-  width: 30%;
+  width: 100%;
   border: solid 2px rgb(1, 130, 1);
   margin: 30px 0;
+}
+
+.show_user_book:hover {
+  border: solid 3px rgb(1, 130, 1);
 }
 
 .show_user_book_image {

@@ -7,9 +7,9 @@
 
       <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true  do |f| %>
 
-      <%- flash.each do |name, msg| -%>
-      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-      <%- end -%> 
+      <%# <%- flash.each do |name, msg| -%>
+      <%# <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %> 
+      <%# <%- end -%> 
 
         <div class="form_field">
           <div class="field_title">メールアドレス</div>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="actions">
-          <%= f.submit "Log in", class:"form_btn" %>
+          <%= f.submit "Log in", class:"form_btn", id:"form_btn" %>
         </div>
       <% end %>
     </div>

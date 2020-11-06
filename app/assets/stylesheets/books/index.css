@@ -53,7 +53,20 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  border-bottom: 4px solid rgb(0, 80, 0);
+  outline: none;
 }
+
+.firstpage_main_btn:hover {
+  background-color: rgb(1, 160, 1);
+}
+
+.firstpage_main_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
 
 /* firstpage_about */
 
@@ -134,7 +147,7 @@
 
   .firstpage_main_btn {
     font-size: 16px;
-    height: 40px;
+    height: 60px;
   }
 }
 

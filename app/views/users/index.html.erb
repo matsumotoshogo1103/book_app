@@ -2,7 +2,7 @@
 
   <div class="top_first">
     <div class="content">
-      <h1 class="top_first_title">ようこそ<br>Forest Libraryへ<br>誰の本棚を覗いてみますか？</h1>
+      <h1 class="top_first_title">ようこそ<br>Book Forestへ<br>誰の本棚を覗いてみますか？</h1>
     </div>
   </div>
 
@@ -13,7 +13,7 @@
         <% @user.each do |user| %>
           <% if current_user.id != user.id %>
             <%= link_to user_path(user.id) do %>
-            <div class="top_user">
+            <div class="top_user", id="user">
               <div class="top_user_left">
                 <%= image_tag user.image.variant(resize: '180x180') %>
               </div>

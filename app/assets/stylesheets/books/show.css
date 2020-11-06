@@ -63,6 +63,18 @@ table,th,td {
   cursor: pointer;
   border-radius: 5px;
   margin: 20px;
+  border-bottom: 4px solid rgb(0, 80, 0);
+  outline: none;
+}
+
+.show_book_btn:hover {
+  background-color: rgb(1, 160, 1);
+}
+
+.show_book_btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 @media (max-width: 599px) {
