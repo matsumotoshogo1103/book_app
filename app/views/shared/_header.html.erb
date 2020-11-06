@@ -3,14 +3,14 @@
     <div class="header">
       <%= link_to users_path, class:"header_left" do %>
       <h1 class= "header_title">Book Forest</h1>
-      <%= image_tag "/assets/book_header_icon.jpeg", class:"book_header_icon"%>
+      <%= image_tag "/assets/book_app_icon.png", class:"book_header_icon"%>
       <% end %>
 
       <% if user_signed_in? %>
       <div class="header_right">
         <ul class= "header_right_lists", id= "header_lists">
-          <li class="header_right_list"><%= link_to current_user.nickname, user_path(current_user.id) %></li>
-          <li class="header_right_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+          <li class="header_right_list"><%= button_to current_user.nickname, user_path(current_user.id), method: :get, class:"header_btn" %></li>
+          <li class="header_right_list"><%= button_to 'ログアウト', destroy_user_session_path, method: :delete, class:"header_btn" %></li>
         </ul>
       </div>
         <div class="hunberger", id="hunberger">

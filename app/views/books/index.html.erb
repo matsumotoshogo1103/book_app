@@ -15,8 +15,8 @@
       本棚を覗いてみませんか？</p>
       <p class="firstpage_main_invite">さあ、あなたも始めよう！</p>
       <ul class="firstpage_main_btns">
-        <li><%= button_to '新規登録', new_user_registration_path, method: :get, class:"firstpage_main_btn" %></li>
-        <li><%= button_to 'ログイン', new_user_session_path, class:"firstpage_main_btn" %></li>
+        <li><%= button_to '新規登録', new_user_registration_path, method: :get, class:"firstpage_main_btn" , id:"registration_btn" %></li>
+        <li><%= button_to 'ログイン', new_user_session_path, class:"firstpage_main_btn" , id:"login_btn"%></li>
       </ul>
     </div>
   </div>
@@ -37,8 +37,8 @@
         <%=image_tag "book_icon.jpeg", class:"firstpage_about_img" %>
         <h2 class="firstpage_about_semititle">シンプルなデザイン</h2>
         <p class="firstpage_about_text">
-        見た目はスッキリとしていますが機能は充実！<br>
-        圧倒的な使いやすさを実現しました。</p>
+        見た目はスッキリとしていますが、機能は充実しています！<br>
+        これまでにない圧倒的な使いやすさを実現しました。</p>
       </div>
 
       <div class="firstpage_about_card">

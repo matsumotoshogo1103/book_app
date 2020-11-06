@@ -32,16 +32,13 @@
   <% if current_user.id == @book.user.id %>
     <div class="show_book_btns">
       <div class="show_book_edit">
-        <%= button_to '編集', edit_book_path(@book.id), method: :get, class:"show_book_btn"%>
+        <%= button_to '編集', edit_book_path(@book.id), method: :get, class:"show_book_btn", id:"book_edit_btn"%>
       </div>
       <div class="show_user_delete">
-        <%= button_to "削除", book_path(@book.id), method: :delete, class:"show_book_btn"%>
+        <%= button_to "削除", book_path(@book.id), method: :delete, class:"show_book_btn", id:"book_delete_btn", data: { confirm: '本当に削除しますか？' }%>
       </div>
     </div>
   <% end %>
 </div>
-
-
-
 
 <%= render "shared/footer" %>
