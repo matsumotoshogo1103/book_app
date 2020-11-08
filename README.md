@@ -2,6 +2,8 @@
 
 Book Forest
 
+
+
 # 📗 概要
 
 ![Book Forest](https://i.gyazo.com/e21943071b8c5df9228ec28e297e40ef.jpg)
@@ -12,16 +14,22 @@ Book Forest
 本ではなく「人」が主体である点です。<br>
 下記で順番に解説します。
 
+
+
 ## 1.ユーザーが一覧で表示される
 ![トップページ](https://i.gyazo.com/e372beb0b35019651108b449d7295111.png)
+
 
 トップページで一覧表示されるのは投稿された本ではなく、
 アカウント登録をしたユーザーです。<br>
 ユーザーの年齢や職種、性別が記載されており
 気になった人の本棚を覗きに行きます。
 
+
+
 ## 2.ユーザーページにて投稿された本を確認できる
 ![ユーザーページ](https://i.gyazo.com/6d1617a910cd056874b33cf1a5c89b67.png)
+
 
 気になるユーザーのページに訪れると、
 そのユーザーが投稿した本を一覧で見ることができます。
@@ -39,9 +47,52 @@ Book Forest
 - Email: test@co.jp
 - password: 123abc
 
+
+
 # 📗 制作背景
 
+
+
 # 📗 開発環境
+
+## サーバーサイド
+
+Ruby, Ruby on Rails
+
+
+## フロントエンド
+
+HTML, CSS, JavaScript
+
+
+## データベース
+
+MySQL
+
+
+## インフラ
+
+AWS(S3)
+
+
+## サーバー
+
+Heroku
+
+
+## ソース管理
+
+GitHub, GitHubDesktop
+
+## テスト
+
+RSpec
+
+## エディタ
+
+VScode
+
+
 
 # テーブル設計
 
