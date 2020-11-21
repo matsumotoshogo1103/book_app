@@ -1,8 +1,8 @@
 .footer {
-  background-color: rgb(27, 25, 25);
-  color: rgb(230, 230, 220);
+  background-color: #4F7302;
+  color: white;
   text-align: center;
-  line-height: 70px;
+  line-height: 60px;
 }
 
 @media (max-width: 599px) {

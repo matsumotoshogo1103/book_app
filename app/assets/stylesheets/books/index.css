@@ -18,7 +18,7 @@
 
 .firstpage_main_right {
   text-align: center;
-  color: rgb(230, 230, 220);
+  color: white;
   margin-top: 70px;
 }
 
@@ -44,21 +44,21 @@
 }
 
 .firstpage_main_btn {
-  color: rgb(230, 230, 220);
-  background-color: rgb(1, 130, 1);
+  color: white;
+  background-color: #F68326;
   font-size: 25px;
   font-weight: bold;
-  width: 18vw;
+  width: 15vw;
   height: 70px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  border-bottom: 4px solid rgb(0, 80, 0);
+  border-bottom: 4px solid #c26a22;
   outline: none;
 }
 
 .firstpage_main_btn:hover {
-  background-color: rgb(1, 160, 1);
+  opacity: 0.8;
 }
 
 .firstpage_main_btn:active {
@@ -77,8 +77,7 @@
 .firstpage_about_title {
   text-align: center;
   font-size: 40px;
-  color: rgb(11, 65, 11);
-  border-bottom: solid 2px rgb(1, 130, 1);
+  color: #465902;
   margin-bottom: 40px;
 }
 
@@ -90,8 +89,8 @@
 
 .firstpage_about_card {
   padding: 15px;
-  width: 25%;
-  border: solid 2px rgb(1, 130, 1);
+  width: 30%;
+  border: solid 1px #4F7302;
 }
 
 
@@ -102,11 +101,11 @@
 }
 
 .firstpage_about_semititle {
-  color: rgb(11, 65, 11);
+  color: #465902;
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
-  border-bottom: solid 2px rgb(1, 130, 1);
+  border-bottom: solid 1px #4F7302;
 }
 
 .firstpage_about_text {

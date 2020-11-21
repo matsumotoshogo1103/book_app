@@ -81,12 +81,12 @@ li {
 }
 
 .content {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
 a:-webkit-any-link {
-  color: rgb(15, 65, 15);
+  color: #333333;
 }
 
 /* Blur images when they have no alt attribute */

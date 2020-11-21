@@ -13,7 +13,7 @@
 .form_title {
   margin-bottom: 30px;
   font-size: 30px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #F68326;
   padding-bottom: 10px;
 }
 
@@ -47,18 +47,18 @@
 .form_btn {
   width: 20vw;
   height: 40px;
-  background-color: #ea352d;
+  background-color: #F68326;
   color: white;
   border: none;
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
-  border-bottom: 4px solid rgb(128, 0, 0);
+  border-bottom: 4px solid #c26a22;
   outline: none;
 }
 
 .form_btn:hover {
-  background-color: rgb(300, 1, 1);
+  opacity: 0.8;
 }
 
 .form_btn:active {
