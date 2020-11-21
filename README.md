@@ -62,7 +62,7 @@
 また、最初はコメント機能を実装しておりましたが、昨今のネットでの誹謗中傷が問題になっている点から外しました。<br>
 自分が作りたいアプリケーションを作るのではなく、ユーザーに安心かつ快適に使ってもらうことを第一に考えた結果です。
 
-[![Image from Gyazo](https://i.gyazo.com/35dd5b9b9e286e4de94a9bbc5c4af0ed.gif)](https://gyazo.com/35dd5b9b9e286e4de94a9bbc5c4af0ed)
+[![Image from Gyazo](https://i.gyazo.com/95e97acbe044d770f15af51dba4430d1.gif)](https://gyazo.com/95e97acbe044d770f15af51dba4430d1)
 
 
 # 📗 制作背景
